@@ -1,0 +1,25 @@
+--cpu=Cortex-M4.fp.sp
+"stm32f3-discovery\stm32f3xx_ll_exti.o"
+"stm32f3-discovery\stm32f3xx_ll_gpio.o"
+"stm32f3-discovery\stm32f3xx_ll_rcc.o"
+"stm32f3-discovery\stm32f3xx_ll_tim.o"
+"stm32f3-discovery\stm32f3xx_ll_usart.o"
+"stm32f3-discovery\stm32f3xx_ll_utils.o"
+"stm32f3-discovery\main.o"
+"stm32f3-discovery\stm32f3xx_it.o"
+"stm32f3-discovery\asciilib.o"
+"stm32f3-discovery\lcd_ili9325.o"
+"stm32f3-discovery\systickms.o"
+"stm32f3-discovery\keypad.o"
+"stm32f3-discovery\display.o"
+"stm32f3-discovery\button.o"
+"stm32f3-discovery\speaker.o"
+"stm32f3-discovery\alphabetmorse.o"
+"stm32f3-discovery\render.o"
+"stm32f3-discovery\retarget_io.o"
+"stm32f3-discovery\startup_stm32f303xc.o"
+"stm32f3-discovery\system_stm32f3xx.o"
+--library_type=microlib --strict --scatter "STM32F3-Discovery\STM32F3-Discovery.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "STM32F3-Discovery.map" -o STM32F3-Discovery\STM32F3-Discovery.axf
